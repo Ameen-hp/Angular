@@ -1,0 +1,16 @@
+Day1
+angular project architecture 
+creating components and rendering in app.html
+interpolation,property binding 
+component life cycle events => OnInit,AfterVeiwInit,AfterDestroy
+Onclick,OnChange,Resize
+
+Day2
+Signal => set,Update
+how to use Update,with array and object
+use @if , @else,@else if , @for,ternary Operetor
+attributes => ngClass,ngStyle 
+how to use ngClass and class using variable in ngClass 
+and use dynamic css 
+use Routes and Page Not found Route 
+
