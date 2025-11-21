@@ -1,0 +1,94 @@
+You are my personal Angular 20 mentor.  
+Teach me Angular 20 step-by-step from the very beginning to advanced topics — in a very simple and beginner-friendly way.
+
+Assume I only know HTML, CSS, and JavaScript (and some MERN basics).  
+Explain everything clearly with setup instructions, concepts, and small examples.
+
+Please cover the following topics in order:
+
+### 📍 PHASE 1: Getting Started
+- What Angular is and how it works (difference from React)
+- Installing Node.js and Angular CLI
+- Creating the first Angular 20 app (step-by-step terminal commands)
+- Understanding project structure and files (src, main.ts, app.module.ts, etc.)
+- How Angular compiles and runs
+- How to run the development server and view changes
+
+### 📍 PHASE 2: Core Building Blocks
+- What is a Component (with simple example)
+- How to create and use multiple components
+- Component decorator and metadata
+- Templates, Styles, and Selectors
+- Data Binding (Interpolation, Property Binding, Event Binding)
+- Two-Way Binding with ngModel
+
+### 📍 PHASE 3: Directives and Pipes
+- What are Directives (Structural vs Attribute)
+- Using *ngIf, *ngFor, *ngSwitch
+- Built-in Pipes (date, uppercase, currency)
+- Creating custom Pipes
+
+### 📍 PHASE 4: Modules and Routing
+- Understanding Angular Modules (NgModule)
+- Creating feature modules
+- Setting up routing and navigation
+- RouterLink, RouterOutlet, and route parameters
+- Lazy loading routes
+
+### 📍 PHASE 5: Services and Dependency Injection
+- What services are and why we use them
+- How to create and inject a service
+- Sharing data between components using a service
+
+### 📍 PHASE 6: Forms and Validation
+- Template-driven forms (with ngModel)
+- Reactive forms (FormBuilder, FormGroup, FormControl)
+- Built-in validators and custom validation
+- Showing validation messages
+
+### 📍 PHASE 7: HTTP and APIs
+- Using HttpClientModule
+- Making GET, POST, PUT, DELETE requests
+- Handling responses and errors
+- Displaying data from an API in a component
+
+### 📍 PHASE 8: Observables and RxJS
+- What Observables are
+- How to subscribe and unsubscribe
+- Using async pipe
+- Common RxJS operators (map, filter, tap)
+
+### 📍 PHASE 9: Authentication & Guards
+- Adding JWT-based login and signup
+- Using route guards (AuthGuard)
+- Storing tokens securely (localStorage)
+- Redirecting users after login/logout
+
+### 📍 PHASE 10: Angular CLI & Optimization
+- Common CLI commands
+- Building the project for production
+- Performance tips (ChangeDetectionStrategy, OnPush, trackBy)
+- Lazy loading optimization
+
+### 📍 PHASE 11: Deployment
+- How to build a production bundle
+- Deploy Angular app on:
+  - Firebase Hosting
+  - GitHub Pages
+  - Vercel or Netlify
+
+### 📍 PHASE 12: Real-World Project
+Give me a small full-stack project idea (like a “Task Manager” or “SolarHub Dashboard”) using Angular 20 + Node.js backend.  
+Include:
+- Frontend structure (components, modules, routes)
+- Backend API endpoints
+- Example of connecting Angular frontend to Node backend via HTTP
+
+For every topic:
+✅ Explain in plain English  
+✅ Include small code examples  
+✅ Show terminal commands if needed  
+✅ Suggest one mini project for practice  
+✅ Provide free resource links (YouTube, Docs, Tutorials)
+
+Keep explanations simple and clear for self-learning.

@@ -1,0 +1,63 @@
+
+
+<div>
+    @if(isUserLoggedIn()) {
+        <h1>Welcome to the User</h1>
+    }
+    @else{
+        <h2>You are not loggedIn</h2>
+    }
+
+    <h1>Fruites Names</h1>
+    <ul>
+       @for(item of fruitsArray; track item) {
+              <li>{{item}}</li>
+       }
+    </ul>
+
+    <h1>Marks Sectiono</h1>
+    <div>
+      @if(marks >= 50) {
+         <h1>Pass</h1>
+      }
+      @else {
+        <h1>Fail</h1>
+      }
+
+    </div>
+
+  <h1>Cities Section</h1>
+   <select (change)="OnSelectOption($event)" class="bg-yellow-500">
+  <option value="TandoAllhyar">TandoAllhyar</option>
+  <option value="Karachi">Karachi</option>
+  <option value="Hyderabad">Hyderabad</option>
+  <option value="Islamabad">Islamabad</option>
+</select>
+
+   <h1>City Selected : {{selectCity()}}</h1>
+</div>
+@if(selectComponent == "Student") {
+    <app-student></app-student>
+}
+@else if (selectComponent == "Admin"){
+    <app-admin></app-admin>
+}
+@else {
+     <app-teacer></app-teacer>
+}
+
+
+<h1>Nested Loop task here</h1>
+
+<div>
+
+
+    @for(element of departments; track element){
+         <h1>Department : {{element.name}}</h1>
+          @for(employe of element.employees;track employe){
+              <h1>-{{employe.name}} ({{employe.position}})</h1>
+             
+          }
+    }
+
+</div>
