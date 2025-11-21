@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Form</title>
+</head>
+
+<body>
+
+  <h2>Simple HTML Form</h2>
+
+  <form #myForm="ngForm" (ngSubmit)="submit(myForm)" >
+
+    <!-- Name -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" #tempName="ngModel" minlength="6" required ngModel><br><br>
+   @if(tempName.touched || tempName.dirty) {
+       <p>name is required please ...</p>
+         @if(tempName.errors?.["required"]){
+           <p>name field is mandantory</p>
+    }
+    @if(tempName.errors?.["minlength"]){
+       <p>at least ther should be 6 characters</p>
+    }
+   }
+    <!-- Email -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" #temEmail="ngModel" name="email" required ngModel><br><br>
+    @if(temEmail.errors?.["invalid"]){
+        <p>your email formate is wrong </p>
+    }
+    <!-- Age -->
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age" required ngModel><br><br>
+
+    <!-- Submit Button -->
+    <button type="submit">Submit</button>
+
+  </form>
+
+</body>
+</html>

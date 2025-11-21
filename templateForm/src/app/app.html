@@ -1,0 +1,43 @@
+<div class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-xl shadow-md space-y-6">
+
+  <h2 class="text-2xl font-bold text-gray-700 text-center">Country Banks</h2>
+
+  <!-- Country Dropdown -->
+  <div>
+    <label class="block text-gray-600 mb-2">Select Country</label>
+    <select
+      [(ngModel)]="selectedCountryCode"
+      (change)="loadBanks()"
+      class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 transition duration-300"
+    >
+      <option value="">-- Select Country --</option>
+      <option *ngFor="let c of countries" [value]="c.code">{{ c.name }}</option>
+    </select>
+  </div>
+
+  <!-- Banks Table -->
+  <div *ngIf="banks.length > 0" class="overflow-x-auto">
+    <table class="min-w-full divide-y divide-gray-200 shadow rounded-lg">
+      <thead class="bg-gray-50">
+        <tr>
+          <th class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Bank Name</th>
+          <th class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Branch</th>
+          <th class="px-6 py-3 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">SWIFT Code</th>
+        </tr>
+      </thead>
+      <tbody class="bg-white divide-y divide-gray-200">
+        <tr *ngFor="let bank of banks" class="hover:bg-blue-50 transition">
+          <td class="px-6 py-4">{{ bank.name }}</td>
+          <td class="px-6 py-4">{{ bank.branch }}</td>
+          <td class="px-6 py-4">{{ bank.swift }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Message if no banks -->
+  <div *ngIf="selectedCountryCode && banks.length === 0" class="text-center text-gray-500 mt-4">
+    No banks found for this country.
+  </div>
+
+</div>

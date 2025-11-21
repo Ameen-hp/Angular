@@ -1,0 +1,12 @@
+<h1>Reactive Form </h1>
+
+ <form  [formGroup]="myform" (ngSubmit)="submit()">
+   <label for="">Name</label>
+   <input type="text" formControlName="name">
+    <br>
+    <label for="">LastName</label>
+    <input type="text" formControlName="lastName">
+    <br>
+    <input type="submit">
+
+ </form>
