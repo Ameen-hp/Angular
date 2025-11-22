@@ -1,0 +1,36 @@
+
+   [
+    {
+      "id": { "labele": "User ID", "value": 101 },
+      "name": { "labele": "Full Name", "value": "Muhammad Ameen" },
+      "email": { "labele": "Email Address", "value": "ameen@example.com" },
+      "phone": { "labele": "Phone Number", "value": "+92-300-1234567" },
+      "role": { "labele": "Job Role", "value": "Frontend Developer" },
+      "city": { "labele": "City", "value": "Karachi" },
+      "country": { "labele": "Country", "value": "Pakistan" },
+      "active": { "labele": "Active Status", "value": true }
+    },
+
+    {
+      "id": { "labele": "User ID", "value": 102 },
+      "name": { "labele": "Full Name", "value": "Ali Raza" },
+      "email": { "labele": "Email Address", "value": "ali.raza@example.com" },
+      "phone": { "labele": "Phone Number", "value": "+92-301-9876543" },
+      "role": { "labele": "Job Role", "value": "Backend Developer" },
+      "city": { "labele": "City", "value": "Lahore" },
+      "country": { "labele": "Country", "value": "Pakistan" },
+      "active": { "labele": "Active Status", "value": false }
+    },
+
+    {
+      "id": { "labele": "User ID", "value": 103 },
+      "name": { "labele": "Full Name", "value": "Sara Khan" },
+      "email": { "labele": "Email Address", "value": "sara.khan@example.com" },
+      "phone": { "labele": "Phone Number", "value": "+92-333-1122334" },
+      "role": { "labele": "Job Role", "value": "UI/UX Designer" },
+      "city": { "labele": "City", "value": "Islamabad" },
+      "country": { "labele": "Country", "value": "Pakistan" },
+      "active": { "labele": "Active Status", "value": true }
+    }
+  ]
+

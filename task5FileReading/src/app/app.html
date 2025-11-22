@@ -1,0 +1,25 @@
+<h1>Reading Json file </h1>
+
+<div>
+   <input type="file" (change)="onFileReader($event)">
+
+  <form action="">
+
+    @for (item of jsonDataArray; track $index) {
+           <label for="">
+                 {{item.id.labele}}
+           </label>
+           <label for="">
+                 {{item.name.labele}}
+           </label>
+           <label for="">
+                 {{item.email.labele}}
+           </label>
+           <label for="">
+            {{item.phone.label}}
+           </label>
+    }
+  </form>
+
+ 
+</div>
